@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Andrii Yushchenko — Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent: #4A7AFB;
+            --bg: #ffffff;
+            --text: #1a1a1a;
+            --light: #f4f4f4;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Inter", Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            overflow-x: hidden;
+        }
+
+        /* HERO */
+        .hero {
+            text-align: center;
+            padding: 120px 20px 100px;
+            background: linear-gradient(135deg, #ffffff 0%, #e7ebff 100%);
+            animation: fadeIn 1.2s ease;
+        }
+
+        .hero h1 {
+            font-size: 54px;
+            font-weight: 800;
+            margin-bottom: 15px;
+            color: #111;
+        }
+
+        .hero p {
+            font-size: 18px;
+            opacity: .8;
+        }
+
+        .hero .tag {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 8px 18px;
+            background: var(--accent);
+            color: white;
+            border-radius: 999px;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            animation: fadeInUp 1.6s ease;
+        }
+
+        /* CARD SECTIONS */
+        section {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .card {
+            background: var(--light);
+            padding: 25px;
+            border-radius: 14px;
+            margin-bottom: 25px;
+            transition: 0.3s ease;
+            transform-style: preserve-3d;
+        }
+
+        .card:hover {
+            background: #eaeaea;
+            transform: translateY(-6px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+        }
+
+        /* LIST */
+        ul {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        li {
+            padding: 4px 0;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 40px 10px;
+            margin-top: 60px;
+            border-top: 1px solid #e5e5e5;
+            font-size: 14px;
+            opacity: 0.7;
+        }
+
+        /* ANIMATIONS */
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+
+        @keyframes fadeInUp {
+            from {opacity: 0; transform: translateY(10px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HERO BLOCK -->
+<div class="hero">
+    <h1>Andrii Yushchenko</h1>
+    <p>Frontend · CI/CD · Automation · GitHub Pages</p>
+    <div class="tag">Практична робота №7 — GitHub CI/CD</div>
+</div>
+
+<section>
+    <h2>Про проєкт</h2>
+    <div class="card">
+        Це сучасний статичний сайт-портфоліо, який автоматично збирається через GitHub Actions 
+        та розгортається на GitHub Pages.  
+        Виконаний у стилі <b>преміального мінімалізму</b> — чистий інтерфейс, плавні анімації, адаптивність.  
+        Цей сайт є результатом роботи над CI/CD у рамках практичної роботи №7.
+    </div>
+</section>
+
+<section>
+    <h2>Мої навички</h2>
+
+    <div class="card">
+        <ul>
+            <li>✔ Git & GitHub — гілки, CI/CD, workflows</li>
+            <li>✔ GitHub Actions — автоматична збірка та деплой</li>
+            <li>✔ Jekyll — статична генерація сайту</li>
+            <li>✔ HTML5 & CSS3 — сучасні UI-рішення</li>
+            <li>✔ Docker / Linux базові навички</li>
+            <li>✔ Автоматизація процесів (DevOps-підхід)</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Технології проєкту</h2>
+
+    <div class="card">
+        <ul>
+            <li>🚀 GitHub Actions — CI/CD Workflow</li>
+            <li>🧩 Jekyll + YAML Front Matter</li>
+            <li>🌐 GitHub Pages деплоймент</li>
+            <li>🔀 Feature Branch Workflow</li>
+            <li>🎨 Minimalist Premium UI</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Посилання</h2>
+
+    <div class="card">
+        <p>Репозиторій GitHub:  
+            <a href="#" target="_blank">https://github.com/your-repo</a></p>
+
+        <p>Опублікований сайт (GitHub Pages):  
+            <a href="#" target="_blank">https://yourname.github.io/your-repo</a></p>
+    </div>
+</section>
+
+<footer>
+    © 2025 · Створено Андрієм Ющенком · Практична робота №7 · CI/CD
+</footer>
+
+</body>
+</html>
